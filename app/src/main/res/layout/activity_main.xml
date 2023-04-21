@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="325dp"
+        android:layout_height="294dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/Ewhast_btn"
+        android:layout_width="89dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginLeft="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/Ecorreo_btn"
+        app:layout_constraintTop_toBottomOf="@+id/foto"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/wlogo1" />
+
+    <ImageView
+        android:id="@+id/Ecorreo_btn"
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginLeft="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/correo"
+        tools:layout_editor_absoluteX="165dp" />
+
+    <ImageView
+        android:id="@+id/btn_galeria"
+        android:layout_width="81dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Ecorreo_btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@drawable/galeria" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="120dp"
+        android:text="Envia una foto"
+        android:textSize="27sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="119dp" />
+
+    <Button
+        android:id="@+id/Tfoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="120dp"
+        android:text="Tomar foto" />
+
+</RelativeLayout>
